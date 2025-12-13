@@ -1,0 +1,44 @@
+[
+    {
+        "level": 0,
+        "message": "First touch. All good. Hair still living its best life.",
+        "gif":"/assets/adventure-time-finn.gif",
+        "sound": "/sounds/good-hair_1.mp3"
+    },
+    {
+        "level": 1,
+        "message": "Second touch. Slightly suspicious, but acceptable.",
+        "gif":"/assets/suspicious-2.gif",
+        "sound":"/sounds/sus.mp3"
+    },
+    {
+        "level": 2,
+        "message": "Okay… oil production has entered the chat.",
+        "gif":"/assets/the-office-no-god-please-no-3.gif",
+        "sound":"/sounds/no-god.mp3"
+    },
+    {
+        "level": 3,
+        "message": "Hands off. We are dangerously close to greasy territory.",
+        "gif":"/assets/michaenyu-sana4.gif",
+        "sound":"/sounds/greasy-territory.mp3"
+    },
+    {
+        "level": 4,
+        "message": "This is no longer hair. This is a lifestyle choice. Stop.",
+        "gif":"/assets/muppetwiki/muppet/wiki5.gif",
+        "sound":"/sounds/stop.mp3"
+    },
+    {
+        "level": 5,
+        "message": "Congratulations. Hair ruined. No refunds.",
+        "gif":"/assets/fuckyou-fuck.gif",
+        "sound":"/sounds/fucked-it-up.mp3"
+    },
+    {
+        "level": 6,
+        "message": "",
+        "gif":"/assets/blank-stare-really.gif",
+        "sound":"/sounds/duvet.mp3"
+    }
+]
