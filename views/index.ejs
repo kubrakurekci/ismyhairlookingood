@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsMyHairLookinGood?</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+</head>
+<body>
+    
+    <div id="app">
+       <h1>First of all</h1>
+       <h2>We recommend not touching your hair too much—you're already beautiful.</h2>
+        <div class="result">
+            <% if (result){ %>
+               <% if (result.message) { %>
+                     <h3><%= result.message %></h3>
+                <% } %>
+                <% if (result.gif) { %>
+                        <img src="<%= result.gif %>" alt="Hair Result Gif"/>
+                <% } %>
+                <% if (result.sound) { %>
+                    <audio autoplay>
+                        <source src="<%= result.sound %>" type="audio/mpeg">
+                    </audio>
+                <% } %> 
+            <% } %>
+        </div>
+      <form action="/checkHair" method="POST">
+  <button type="submit">Check Hair</button>
+</form>
+
+    <script src="/ismyhairlookingood/index.js"></script>
+</body>
+</html>
