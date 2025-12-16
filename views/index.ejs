@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IsMyHairLookinGood?</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 
 </head>
 <body>
-    
     <div id="app">
-       <h1>First of all</h1>
-       <h2>We recommend not touching your hair too much. You're already beautiful.</h2>
-        <div class="result">
+        <main class="result">
+       <h1 class="title">First of all</h1>
+       <h2 class="context">We recommend not touching your hair too much. You're already beautiful.</h2>
+        <div >
             <% if (result){ %>
                <% if (result.message) { %>
-                     <h3><%= result.message %></h3>
+                     <h3 class="result-title"><%= result.message %></h3>
                 <% } %>
                 <% if (result.gif) { %>
-                        <img src="<%= result.gif %>" alt="Hair Result Gif"/>
+                        <img src="<%= result.gif %>" alt="Hair Result Gif" class="image"/>
                 <% } %>
                 <% if (result.sound) { %>
                     <audio autoplay>
@@ -27,10 +27,15 @@
                 <% } %> 
             <% } %>
         </div>
-      <form action="/checkHair" method="POST">
-  <button type="submit">Check Hair</button>
-</form>
-
+        <div class="buttons">
+        <form action="/checkHair" method="POST">
+        <button class="button" type="submit">Check Hair</button>
+        </form>
+         <form action="/reset" method="POST">
+        <button class="button" type="submit">Hands Off</button>
+        </form>
+        </div>
+        </main>
     <script src="/ismyhairlookingood/index.js"></script>
 </body>
 </html>

@@ -31,3 +31,7 @@ app.post("/checkHair", (req, res) => {
       result: hairData,
     });
 });
+app.post("/reset", (req, res) => {
+    currentLevel = -1;
+    res.render("index", { result: null });
+});
